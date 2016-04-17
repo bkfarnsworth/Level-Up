@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1D5CF221CC4012D00BE38B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF211CC4012D00BE38B6 /* AppDelegate.swift */; };
+		C1D5CF241CC4012E00BE38B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF231CC4012E00BE38B6 /* ViewController.swift */; };
+		C1D5CF271CC4012E00BE38B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF251CC4012E00BE38B6 /* Main.storyboard */; };
+		C1D5CF291CC4012E00BE38B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF281CC4012E00BE38B6 /* Assets.xcassets */; };
+		C1D5CF2C1CC4012E00BE38B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF2A1CC4012E00BE38B6 /* LaunchScreen.storyboard */; };
+		C1D5CF371CC4012E00BE38B6 /* Level_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF361CC4012E00BE38B6 /* Level_UpTests.swift */; };
+		C1D5CF421CC4012E00BE38B6 /* Level_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF411CC4012E00BE38B6 /* Level_UpUITests.swift */; };
+		C1D5CF471CC4012E00BE38B6 /* Level Up WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C1D5CF461CC4012E00BE38B6 /* Level Up WatchKit App.app */; };
+		C1D5CF4D1CC4012E00BE38B6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF4B1CC4012E00BE38B6 /* Interface.storyboard */; };
+		C1D5CF4F1CC4012E00BE38B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF4E1CC4012E00BE38B6 /* Assets.xcassets */; };
+		C1D5CF561CC4012E00BE38B6 /* Level Up WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C1D5CF551CC4012E00BE38B6 /* Level Up WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C1D5CF5D1CC4012E00BE38B6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF5C1CC4012E00BE38B6 /* InterfaceController.swift */; };
+		C1D5CF5F1CC4012E00BE38B6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF5E1CC4012E00BE38B6 /* ExtensionDelegate.swift */; };
+		C1D5CF611CC4012E00BE38B6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF601CC4012E00BE38B6 /* NotificationController.swift */; };
+		C1D5CF631CC4012E00BE38B6 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF621CC4012E00BE38B6 /* GlanceController.swift */; };
+		C1D5CF651CC4012E00BE38B6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF641CC4012E00BE38B6 /* ComplicationController.swift */; };
+		C1D5CF671CC4012E00BE38B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF661CC4012E00BE38B6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1D5CF331CC4012E00BE38B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1D5CF161CC4012D00BE38B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D5CF1D1CC4012D00BE38B6;
+			remoteInfo = "Level Up";
+		};
+		C1D5CF3E1CC4012E00BE38B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1D5CF161CC4012D00BE38B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D5CF1D1CC4012D00BE38B6;
+			remoteInfo = "Level Up";
+		};
+		C1D5CF481CC4012E00BE38B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1D5CF161CC4012D00BE38B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D5CF451CC4012E00BE38B6;
+			remoteInfo = "Level Up WatchKit App";
+		};
+		C1D5CF571CC4012E00BE38B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1D5CF161CC4012D00BE38B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D5CF541CC4012E00BE38B6;
+			remoteInfo = "Level Up WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1D5CF6E1CC4012E00BE38B6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C1D5CF561CC4012E00BE38B6 /* Level Up WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF721CC4012E00BE38B6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C1D5CF471CC4012E00BE38B6 /* Level Up WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C1D5CF1E1CC4012D00BE38B6 /* Level Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Level Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D5CF211CC4012D00BE38B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1D5CF231CC4012E00BE38B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1D5CF261CC4012E00BE38B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1D5CF281CC4012E00BE38B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1D5CF2B1CC4012E00BE38B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1D5CF2D1CC4012E00BE38B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D5CF321CC4012E00BE38B6 /* Level UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Level UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D5CF361CC4012E00BE38B6 /* Level_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level_UpTests.swift; sourceTree = "<group>"; };
+		C1D5CF381CC4012E00BE38B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D5CF3D1CC4012E00BE38B6 /* Level UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Level UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D5CF411CC4012E00BE38B6 /* Level_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level_UpUITests.swift; sourceTree = "<group>"; };
+		C1D5CF431CC4012E00BE38B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D5CF461CC4012E00BE38B6 /* Level Up WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Level Up WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D5CF4C1CC4012E00BE38B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C1D5CF4E1CC4012E00BE38B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1D5CF501CC4012E00BE38B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D5CF551CC4012E00BE38B6 /* Level Up WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Level Up WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D5CF5B1CC4012E00BE38B6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C1D5CF5C1CC4012E00BE38B6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C1D5CF5E1CC4012E00BE38B6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C1D5CF601CC4012E00BE38B6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C1D5CF621CC4012E00BE38B6 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		C1D5CF641CC4012E00BE38B6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C1D5CF661CC4012E00BE38B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1D5CF681CC4012E00BE38B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1D5CF1B1CC4012D00BE38B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF2F1CC4012E00BE38B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF3A1CC4012E00BE38B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF521CC4012E00BE38B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1D5CF151CC4012D00BE38B6 = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF201CC4012D00BE38B6 /* Level Up */,
+				C1D5CF351CC4012E00BE38B6 /* Level UpTests */,
+				C1D5CF401CC4012E00BE38B6 /* Level UpUITests */,
+				C1D5CF4A1CC4012E00BE38B6 /* Level Up WatchKit App */,
+				C1D5CF591CC4012E00BE38B6 /* Level Up WatchKit Extension */,
+				C1D5CF1F1CC4012D00BE38B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1D5CF1F1CC4012D00BE38B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF1E1CC4012D00BE38B6 /* Level Up.app */,
+				C1D5CF321CC4012E00BE38B6 /* Level UpTests.xctest */,
+				C1D5CF3D1CC4012E00BE38B6 /* Level UpUITests.xctest */,
+				C1D5CF461CC4012E00BE38B6 /* Level Up WatchKit App.app */,
+				C1D5CF551CC4012E00BE38B6 /* Level Up WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1D5CF201CC4012D00BE38B6 /* Level Up */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF211CC4012D00BE38B6 /* AppDelegate.swift */,
+				C1D5CF231CC4012E00BE38B6 /* ViewController.swift */,
+				C1D5CF251CC4012E00BE38B6 /* Main.storyboard */,
+				C1D5CF281CC4012E00BE38B6 /* Assets.xcassets */,
+				C1D5CF2A1CC4012E00BE38B6 /* LaunchScreen.storyboard */,
+				C1D5CF2D1CC4012E00BE38B6 /* Info.plist */,
+			);
+			path = "Level Up";
+			sourceTree = "<group>";
+		};
+		C1D5CF351CC4012E00BE38B6 /* Level UpTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF361CC4012E00BE38B6 /* Level_UpTests.swift */,
+				C1D5CF381CC4012E00BE38B6 /* Info.plist */,
+			);
+			path = "Level UpTests";
+			sourceTree = "<group>";
+		};
+		C1D5CF401CC4012E00BE38B6 /* Level UpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF411CC4012E00BE38B6 /* Level_UpUITests.swift */,
+				C1D5CF431CC4012E00BE38B6 /* Info.plist */,
+			);
+			path = "Level UpUITests";
+			sourceTree = "<group>";
+		};
+		C1D5CF4A1CC4012E00BE38B6 /* Level Up WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF4B1CC4012E00BE38B6 /* Interface.storyboard */,
+				C1D5CF4E1CC4012E00BE38B6 /* Assets.xcassets */,
+				C1D5CF501CC4012E00BE38B6 /* Info.plist */,
+			);
+			path = "Level Up WatchKit App";
+			sourceTree = "<group>";
+		};
+		C1D5CF591CC4012E00BE38B6 /* Level Up WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF5C1CC4012E00BE38B6 /* InterfaceController.swift */,
+				C1D5CF5E1CC4012E00BE38B6 /* ExtensionDelegate.swift */,
+				C1D5CF601CC4012E00BE38B6 /* NotificationController.swift */,
+				C1D5CF621CC4012E00BE38B6 /* GlanceController.swift */,
+				C1D5CF641CC4012E00BE38B6 /* ComplicationController.swift */,
+				C1D5CF661CC4012E00BE38B6 /* Assets.xcassets */,
+				C1D5CF681CC4012E00BE38B6 /* Info.plist */,
+				C1D5CF5A1CC4012E00BE38B6 /* Supporting Files */,
+			);
+			path = "Level Up WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C1D5CF5A1CC4012E00BE38B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1D5CF5B1CC4012E00BE38B6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1D5CF1D1CC4012D00BE38B6 /* Level Up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D5CF731CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up" */;
+			buildPhases = (
+				C1D5CF1A1CC4012D00BE38B6 /* Sources */,
+				C1D5CF1B1CC4012D00BE38B6 /* Frameworks */,
+				C1D5CF1C1CC4012D00BE38B6 /* Resources */,
+				C1D5CF721CC4012E00BE38B6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D5CF491CC4012E00BE38B6 /* PBXTargetDependency */,
+			);
+			name = "Level Up";
+			productName = "Level Up";
+			productReference = C1D5CF1E1CC4012D00BE38B6 /* Level Up.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1D5CF311CC4012E00BE38B6 /* Level UpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D5CF761CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level UpTests" */;
+			buildPhases = (
+				C1D5CF2E1CC4012E00BE38B6 /* Sources */,
+				C1D5CF2F1CC4012E00BE38B6 /* Frameworks */,
+				C1D5CF301CC4012E00BE38B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D5CF341CC4012E00BE38B6 /* PBXTargetDependency */,
+			);
+			name = "Level UpTests";
+			productName = "Level UpTests";
+			productReference = C1D5CF321CC4012E00BE38B6 /* Level UpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1D5CF3C1CC4012E00BE38B6 /* Level UpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D5CF791CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level UpUITests" */;
+			buildPhases = (
+				C1D5CF391CC4012E00BE38B6 /* Sources */,
+				C1D5CF3A1CC4012E00BE38B6 /* Frameworks */,
+				C1D5CF3B1CC4012E00BE38B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D5CF3F1CC4012E00BE38B6 /* PBXTargetDependency */,
+			);
+			name = "Level UpUITests";
+			productName = "Level UpUITests";
+			productReference = C1D5CF3D1CC4012E00BE38B6 /* Level UpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C1D5CF451CC4012E00BE38B6 /* Level Up WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D5CF6F1CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up WatchKit App" */;
+			buildPhases = (
+				C1D5CF441CC4012E00BE38B6 /* Resources */,
+				C1D5CF6E1CC4012E00BE38B6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D5CF581CC4012E00BE38B6 /* PBXTargetDependency */,
+			);
+			name = "Level Up WatchKit App";
+			productName = "Level Up WatchKit App";
+			productReference = C1D5CF461CC4012E00BE38B6 /* Level Up WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C1D5CF541CC4012E00BE38B6 /* Level Up WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D5CF6B1CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up WatchKit Extension" */;
+			buildPhases = (
+				C1D5CF511CC4012E00BE38B6 /* Sources */,
+				C1D5CF521CC4012E00BE38B6 /* Frameworks */,
+				C1D5CF531CC4012E00BE38B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Level Up WatchKit Extension";
+			productName = "Level Up WatchKit Extension";
+			productReference = C1D5CF551CC4012E00BE38B6 /* Level Up WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1D5CF161CC4012D00BE38B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Brian Farnsworth";
+				TargetAttributes = {
+					C1D5CF1D1CC4012D00BE38B6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5WXBG4MSTC;
+					};
+					C1D5CF311CC4012E00BE38B6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5WXBG4MSTC;
+						TestTargetID = C1D5CF1D1CC4012D00BE38B6;
+					};
+					C1D5CF3C1CC4012E00BE38B6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5WXBG4MSTC;
+						TestTargetID = C1D5CF1D1CC4012D00BE38B6;
+					};
+					C1D5CF451CC4012E00BE38B6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5WXBG4MSTC;
+					};
+					C1D5CF541CC4012E00BE38B6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5WXBG4MSTC;
+					};
+				};
+			};
+			buildConfigurationList = C1D5CF191CC4012D00BE38B6 /* Build configuration list for PBXProject "Level Up" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1D5CF151CC4012D00BE38B6;
+			productRefGroup = C1D5CF1F1CC4012D00BE38B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1D5CF1D1CC4012D00BE38B6 /* Level Up */,
+				C1D5CF311CC4012E00BE38B6 /* Level UpTests */,
+				C1D5CF3C1CC4012E00BE38B6 /* Level UpUITests */,
+				C1D5CF451CC4012E00BE38B6 /* Level Up WatchKit App */,
+				C1D5CF541CC4012E00BE38B6 /* Level Up WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1D5CF1C1CC4012D00BE38B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D5CF2C1CC4012E00BE38B6 /* LaunchScreen.storyboard in Resources */,
+				C1D5CF291CC4012E00BE38B6 /* Assets.xcassets in Resources */,
+				C1D5CF271CC4012E00BE38B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF301CC4012E00BE38B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF3B1CC4012E00BE38B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF441CC4012E00BE38B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D5CF4F1CC4012E00BE38B6 /* Assets.xcassets in Resources */,
+				C1D5CF4D1CC4012E00BE38B6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF531CC4012E00BE38B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D5CF671CC4012E00BE38B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1D5CF1A1CC4012D00BE38B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D5CF241CC4012E00BE38B6 /* ViewController.swift in Sources */,
+				C1D5CF221CC4012D00BE38B6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF2E1CC4012E00BE38B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D5CF371CC4012E00BE38B6 /* Level_UpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF391CC4012E00BE38B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D5CF421CC4012E00BE38B6 /* Level_UpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D5CF511CC4012E00BE38B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D5CF611CC4012E00BE38B6 /* NotificationController.swift in Sources */,
+				C1D5CF5F1CC4012E00BE38B6 /* ExtensionDelegate.swift in Sources */,
+				C1D5CF651CC4012E00BE38B6 /* ComplicationController.swift in Sources */,
+				C1D5CF5D1CC4012E00BE38B6 /* InterfaceController.swift in Sources */,
+				C1D5CF631CC4012E00BE38B6 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1D5CF341CC4012E00BE38B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D5CF1D1CC4012D00BE38B6 /* Level Up */;
+			targetProxy = C1D5CF331CC4012E00BE38B6 /* PBXContainerItemProxy */;
+		};
+		C1D5CF3F1CC4012E00BE38B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D5CF1D1CC4012D00BE38B6 /* Level Up */;
+			targetProxy = C1D5CF3E1CC4012E00BE38B6 /* PBXContainerItemProxy */;
+		};
+		C1D5CF491CC4012E00BE38B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D5CF451CC4012E00BE38B6 /* Level Up WatchKit App */;
+			targetProxy = C1D5CF481CC4012E00BE38B6 /* PBXContainerItemProxy */;
+		};
+		C1D5CF581CC4012E00BE38B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D5CF541CC4012E00BE38B6 /* Level Up WatchKit Extension */;
+			targetProxy = C1D5CF571CC4012E00BE38B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1D5CF251CC4012E00BE38B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1D5CF261CC4012E00BE38B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1D5CF2A1CC4012E00BE38B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1D5CF2B1CC4012E00BE38B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C1D5CF4B1CC4012E00BE38B6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1D5CF4C1CC4012E00BE38B6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1D5CF691CC4012E00BE38B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1D5CF6A1CC4012E00BE38B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1D5CF6C1CC4012E00BE38B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Level Up WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C1D5CF6D1CC4012E00BE38B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Level Up WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		C1D5CF701CC4012E00BE38B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Level_Up_WatchKit_Extension;
+				INFOPLIST_FILE = "Level Up WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C1D5CF711CC4012E00BE38B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Level_Up_WatchKit_Extension;
+				INFOPLIST_FILE = "Level Up WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		C1D5CF741CC4012E00BE38B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Level Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1D5CF751CC4012E00BE38B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Level Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C1D5CF771CC4012E00BE38B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Level UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Level Up.app/Level Up";
+			};
+			name = Debug;
+		};
+		C1D5CF781CC4012E00BE38B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Level UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Level Up.app/Level Up";
+			};
+			name = Release;
+		};
+		C1D5CF7A1CC4012E00BE38B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Level UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Level Up";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C1D5CF7B1CC4012E00BE38B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Level UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Level Up";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1D5CF191CC4012D00BE38B6 /* Build configuration list for PBXProject "Level Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D5CF691CC4012E00BE38B6 /* Debug */,
+				C1D5CF6A1CC4012E00BE38B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1D5CF6B1CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D5CF6C1CC4012E00BE38B6 /* Debug */,
+				C1D5CF6D1CC4012E00BE38B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1D5CF6F1CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D5CF701CC4012E00BE38B6 /* Debug */,
+				C1D5CF711CC4012E00BE38B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1D5CF731CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D5CF741CC4012E00BE38B6 /* Debug */,
+				C1D5CF751CC4012E00BE38B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1D5CF761CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level UpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D5CF771CC4012E00BE38B6 /* Debug */,
+				C1D5CF781CC4012E00BE38B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1D5CF791CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level UpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D5CF7A1CC4012E00BE38B6 /* Debug */,
+				C1D5CF7B1CC4012E00BE38B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1D5CF161CC4012D00BE38B6 /* Project object */;
+}
