@@ -10,6 +10,8 @@
 //  https://www.raywenderlich.com/115695/getting-started-with-core-data-tutorial
 //  print("name \(name))")
 //
+//  TODO:
+//      Make the sharedcode take a param that is the context, so I don't have to pass it everywhere
 //
 
 import UIKit
@@ -17,7 +19,8 @@ import CoreData
 
 class ViewController: UIViewController {
 
-    var qualities = [NSManagedObject]();
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+    let sharedCode = SharedCode();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,83 +33,24 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+        super.viewWillAppear(animated);
         let managedContext = appDelegate.managedObjectContext;
-        let fetchRequest = NSFetchRequest(entityName: "Quality");
-        
-        do {
-            let results = try managedContext.executeFetchRequest(fetchRequest);
-            qualities = results as! [NSManagedObject]
-            
-            for(var i = 0; i < qualities.count; i++){
-                print("Printing")
-                let quality = qualities[i];
-                let name = quality.valueForKey("name") as! String;
-                let count = quality.valueForKey("count") as! Int;
-                print("name \(name)");
-                print("count \(count)");
-                
-                if(name == "Happiness"){
-                    happinessCountLabel.text = String(count);
-                }
-            }
-            
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
-    }
-
-    @IBOutlet weak var happinessCountLabel: UILabel!
-    @IBAction func didClickHappinessButton(sender: UIButton) {
-        
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-        let managedContext = appDelegate.managedObjectContext;
-        let fetchRequest = NSFetchRequest(entityName: "Quality");
-        fetchRequest.predicate = NSPredicate(format: "name = %@", "Happiness");
-        
-        do {
-            let results = try managedContext.executeFetchRequest(fetchRequest);
-            let queriedQualities = results as! [NSManagedObject];
-            let happiness = queriedQualities[0];
-            let count = happiness.valueForKey("count") as! Int;
-            let newCount = count + 1;
-            
-            happiness.setValue(newCount, forKey: "count");
-            
-            do{
-                try managedContext.save();
-                //TODO: still need to update the internal array  qualities.append(quality);
-                //what is the best way to do this? Update the array and then call a render function?
-            } catch let error as NSError {
-                print("Could not save \(error), \(error.userInfo)")
-            }
-            
-            happinessCountLabel.text = String(newCount);
-
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
+        sharedCode.loadQualities(managedContext, name: "Happiness", setLabel: setLabel);
     }
     
-    func createNewQuality(){
-        //        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-        //        let managedContext = appDelegate.managedObjectContext;
-        //        let entity = NSEntityDescription.entityForName("Quality", inManagedObjectContext:managedContext);
-        //        let quality = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext);
-        //
-        //        quality.setValue("Happiness", forKey: "name");
-        //        quality.setValue(0, forKey: "count");
-        
-        //        do{
-        //            try managedContext.save();
-        //            qualities.append(quality);
-        //        } catch let error as NSError {
-        //            print("Could not save \(error), \(error.userInfo)")
-        //        }
-
-    }//create new quality
+    @IBOutlet weak var happinessCountLabel: UILabel!
+    @IBAction func didClickHappinessButton(sender: UIButton) {
+        let managedContext = appDelegate.managedObjectContext;
+        sharedCode.incrementQuality(managedContext, qualityName: "Happiness", setLabel: setLabel);
+    }
+    @IBAction func didClickCreateSelfRespectButton(sender: UIButton) {
+        let managedContext = appDelegate.managedObjectContext;
+        sharedCode.createNewQuality(managedContext, name: "Self-Respect");
+    }
+    
+    func setLabel(count: Int){
+        happinessCountLabel.text = String(count);
+    }
     
 }//End of class
 

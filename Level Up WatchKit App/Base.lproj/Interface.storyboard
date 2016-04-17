@@ -10,13 +10,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Level_Up_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Happiness" id="BhB-F1-oIF">
+                        <button width="1" alignment="left" title="Self-Respect" id="BhB-F1-oIF">
                             <connections>
                                 <action selector="didClickHappinessButton" destination="AgC-eL-Hgc" id="YQ1-f0-qlm"/>
                             </connections>
                         </button>
                         <label alignment="left" text="Count:" id="ORD-Re-efd"/>
                         <label width="48" alignment="left" text="0" id="CT3-hb-WsM"/>
+                        <button width="1" alignment="left" title="Create Self-Respect" id="P7Q-IQ-joJ">
+                            <connections>
+                                <action selector="didClickCreateSelfRespectButton" destination="AgC-eL-Hgc" id="0FJ-Y8-P28"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="happinessCountLabel" destination="CT3-hb-WsM" id="AaX-yZ-Twg"/>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C166C9FA1CC447F300FCB117 /* Level Up Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C166C9F81CC447F300FCB117 /* Level Up Model.xcdatamodeld */; };
+		C166C9FB1CC447F300FCB117 /* Level Up Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C166C9F81CC447F300FCB117 /* Level Up Model.xcdatamodeld */; };
+		C166C9FD1CC44D7F00FCB117 /* SharedCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C166C9FC1CC44D7F00FCB117 /* SharedCode.swift */; };
+		C166C9FE1CC44D7F00FCB117 /* SharedCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C166C9FC1CC44D7F00FCB117 /* SharedCode.swift */; };
 		C1D5CF221CC4012D00BE38B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF211CC4012D00BE38B6 /* AppDelegate.swift */; };
 		C1D5CF241CC4012E00BE38B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF231CC4012E00BE38B6 /* ViewController.swift */; };
 		C1D5CF271CC4012E00BE38B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF251CC4012E00BE38B6 /* Main.storyboard */; };
@@ -24,7 +28,6 @@
 		C1D5CF631CC4012E00BE38B6 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF621CC4012E00BE38B6 /* GlanceController.swift */; };
 		C1D5CF651CC4012E00BE38B6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF641CC4012E00BE38B6 /* ComplicationController.swift */; };
 		C1D5CF671CC4012E00BE38B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D5CF661CC4012E00BE38B6 /* Assets.xcassets */; };
-		C1D5CF7E1CC4142200BE38B6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CF7C1CC4142200BE38B6 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C166C9F91CC447F300FCB117 /* Level Up Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Level Up Model.xcdatamodel"; sourceTree = "<group>"; };
+		C166C9FC1CC44D7F00FCB117 /* SharedCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedCode.swift; sourceTree = "<group>"; };
 		C1D5CF1E1CC4012D00BE38B6 /* Level Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Level Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D5CF211CC4012D00BE38B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1D5CF231CC4012E00BE38B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +115,6 @@
 		C1D5CF641CC4012E00BE38B6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		C1D5CF661CC4012E00BE38B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1D5CF681CC4012E00BE38B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1D5CF7D1CC4142200BE38B6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		C1D5CF151CC4012D00BE38B6 = {
 			isa = PBXGroup;
 			children = (
+				C166C9F81CC447F300FCB117 /* Level Up Model.xcdatamodeld */,
 				C1D5CF201CC4012D00BE38B6 /* Level Up */,
 				C1D5CF351CC4012E00BE38B6 /* Level UpTests */,
 				C1D5CF401CC4012E00BE38B6 /* Level UpUITests */,
@@ -178,7 +183,7 @@
 				C1D5CF281CC4012E00BE38B6 /* Assets.xcassets */,
 				C1D5CF2A1CC4012E00BE38B6 /* LaunchScreen.storyboard */,
 				C1D5CF2D1CC4012E00BE38B6 /* Info.plist */,
-				C1D5CF7C1CC4142200BE38B6 /* Model.xcdatamodeld */,
+				C166C9FC1CC44D7F00FCB117 /* SharedCode.swift */,
 			);
 			path = "Level Up";
 			sourceTree = "<group>";
@@ -432,8 +437,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1D5CF241CC4012E00BE38B6 /* ViewController.swift in Sources */,
+				C166C9FD1CC44D7F00FCB117 /* SharedCode.swift in Sources */,
+				C166C9FA1CC447F300FCB117 /* Level Up Model.xcdatamodeld in Sources */,
 				C1D5CF221CC4012D00BE38B6 /* AppDelegate.swift in Sources */,
-				C1D5CF7E1CC4142200BE38B6 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,9 +464,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1D5CF611CC4012E00BE38B6 /* NotificationController.swift in Sources */,
+				C166C9FB1CC447F300FCB117 /* Level Up Model.xcdatamodeld in Sources */,
 				C1D5CF5F1CC4012E00BE38B6 /* ExtensionDelegate.swift in Sources */,
 				C1D5CF651CC4012E00BE38B6 /* ComplicationController.swift in Sources */,
 				C1D5CF5D1CC4012E00BE38B6 /* InterfaceController.swift in Sources */,
+				C166C9FE1CC44D7F00FCB117 /* SharedCode.swift in Sources */,
 				C1D5CF631CC4012E00BE38B6 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Level Up WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up.watchkitapp.watchkitextension";
@@ -618,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Level Up WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.farns.brian.Level-Up.watchkitapp.watchkitextension";
@@ -750,6 +760,7 @@
 				C1D5CF6D1CC4012E00BE38B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1D5CF6F1CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -758,6 +769,7 @@
 				C1D5CF711CC4012E00BE38B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1D5CF731CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level Up" */ = {
 			isa = XCConfigurationList;
@@ -766,6 +778,7 @@
 				C1D5CF751CC4012E00BE38B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1D5CF761CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level UpTests" */ = {
 			isa = XCConfigurationList;
@@ -774,6 +787,7 @@
 				C1D5CF781CC4012E00BE38B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1D5CF791CC4012E00BE38B6 /* Build configuration list for PBXNativeTarget "Level UpUITests" */ = {
 			isa = XCConfigurationList;
@@ -782,17 +796,18 @@
 				C1D5CF7B1CC4012E00BE38B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C1D5CF7C1CC4142200BE38B6 /* Model.xcdatamodeld */ = {
+		C166C9F81CC447F300FCB117 /* Level Up Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C1D5CF7D1CC4142200BE38B6 /* Model.xcdatamodel */,
+				C166C9F91CC447F300FCB117 /* Level Up Model.xcdatamodel */,
 			);
-			currentVersion = C1D5CF7D1CC4142200BE38B6 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = C166C9F91CC447F300FCB117 /* Level Up Model.xcdatamodel */;
+			path = "Level Up Model.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
