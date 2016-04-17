@@ -8,6 +8,7 @@
 //
 //  Resources: 
 //  https://www.raywenderlich.com/115695/getting-started-with-core-data-tutorial
+//  print("name \(name))")
 //
 //
 
@@ -21,25 +22,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-          print(qualities)
-        
-//        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-//        let managedContext = appDelegate.managedObjectContext;
-//        let entity = NSEntityDescription.entityForName("Quality", inManagedObjectContext:managedContext);
-//        let quality = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext);
-//        
-//        quality.setValue("Happiness", forKey: "name");
-//        quality.setValue(0, forKey: "count");
-        
-//        do{
-//            try managedContext.save();
-//            qualities.append(quality);
-//        } catch let error as NSError {
-//            print("Could not save \(error), \(error.userInfo)")
-//        }
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -49,8 +37,7 @@ class ViewController: UIViewController {
         let fetchRequest = NSFetchRequest(entityName: "Quality");
         
         do {
-            let results =
-                try managedContext.executeFetchRequest(fetchRequest)
+            let results = try managedContext.executeFetchRequest(fetchRequest);
             qualities = results as! [NSManagedObject]
             
             for(var i = 0; i < qualities.count; i++){
@@ -64,23 +51,13 @@ class ViewController: UIViewController {
                 if(name == "Happiness"){
                     happinessCountLabel.text = String(count);
                 }
-                
             }
             
-            
-            print("qualities \(qualities.count)")
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-    
     @IBOutlet weak var happinessCountLabel: UILabel!
     @IBAction func didClickHappinessButton(sender: UIButton) {
         
@@ -90,47 +67,46 @@ class ViewController: UIViewController {
         fetchRequest.predicate = NSPredicate(format: "name = %@", "Happiness");
         
         do {
-            let results =
-                try managedContext.executeFetchRequest(fetchRequest)
-            qualities = results as! [NSManagedObject]
-            print("qualities \(qualities.count)")
-            var hap = qualities[0];
-            var name = hap.valueForKey("name") as! String;
-            var count = hap.valueForKey("count") as! Int;
-            print("qualities \(hap))")
-                        print("name \(name))")
-                        print("count \(count))")
+            let results = try managedContext.executeFetchRequest(fetchRequest);
+            let queriedQualities = results as! [NSManagedObject];
+            let happiness = queriedQualities[0];
+            let count = happiness.valueForKey("count") as! Int;
+            let newCount = count + 1;
             
+            happiness.setValue(newCount, forKey: "count");
             
+            do{
+                try managedContext.save();
+                //TODO: still need to update the internal array  qualities.append(quality);
+                //what is the best way to do this? Update the array and then call a render function?
+            } catch let error as NSError {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+            
+            happinessCountLabel.text = String(newCount);
 
-            
-            hap.setValue(count + 1, forKey: "count");
-            happinessCountLabel.text = String(count + 1)
-            
-//            let entity = NSEntityDescription.entityForName("Quality", inManagedObjectContext:managedContext);
-            //        let quality = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext);
-            //
-            //        quality.setValue("Happiness", forKey: "name");
-            //        quality.setValue(0, forKey: "count");
-            
-                    do{
-                        try managedContext.save();
-//                        qualities.append(quality);
-                    } catch let error as NSError {
-                        print("Could not save \(error), \(error.userInfo)")
-                    }
-
-            
-            
-            
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
-        
-        
-//        count++;
-//        happinessCountLabel.text = String(count);
     }
+    
+    func createNewQuality(){
+        //        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+        //        let managedContext = appDelegate.managedObjectContext;
+        //        let entity = NSEntityDescription.entityForName("Quality", inManagedObjectContext:managedContext);
+        //        let quality = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext);
+        //
+        //        quality.setValue("Happiness", forKey: "name");
+        //        quality.setValue(0, forKey: "count");
+        
+        //        do{
+        //            try managedContext.save();
+        //            qualities.append(quality);
+        //        } catch let error as NSError {
+        //            print("Could not save \(error), \(error.userInfo)")
+        //        }
 
-}
+    }//create new quality
+    
+}//End of class
 
