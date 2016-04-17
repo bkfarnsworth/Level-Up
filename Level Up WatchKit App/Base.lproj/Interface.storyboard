@@ -8,7 +8,13 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Level_Up_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Level_Up_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Happiness" id="BhB-F1-oIF"/>
+                        <label alignment="left" text="Count:" id="ORD-Re-efd"/>
+                        <label alignment="left" text="0" id="CT3-hb-WsM"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
