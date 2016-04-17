@@ -10,10 +10,17 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Level_Up_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Happiness" id="BhB-F1-oIF"/>
+                        <button width="1" alignment="left" title="Happiness" id="BhB-F1-oIF">
+                            <connections>
+                                <action selector="didClickHappinessButton" destination="AgC-eL-Hgc" id="YQ1-f0-qlm"/>
+                            </connections>
+                        </button>
                         <label alignment="left" text="Count:" id="ORD-Re-efd"/>
-                        <label alignment="left" text="0" id="CT3-hb-WsM"/>
+                        <label width="48" alignment="left" text="0" id="CT3-hb-WsM"/>
                     </items>
+                    <connections>
+                        <outlet property="happinessCountLabel" destination="CT3-hb-WsM" id="AaX-yZ-Twg"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>

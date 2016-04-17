@@ -27,5 +27,11 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    var count = 0;
+    @IBOutlet var happinessCountLabel: WKInterfaceLabel!
+    @IBAction func didClickHappinessButton() {
+        count++;
+        happinessCountLabel.setText(String(count));
+    }
 
 }

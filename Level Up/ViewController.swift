@@ -19,7 +19,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    var count = 0;
+    
+    @IBOutlet weak var happinessCountLabel: UILabel!
+    @IBAction func didClickHappinessButton(sender: UIButton) {
+        count++;
+        happinessCountLabel.text = String(count);
+    }
 
 }
 
