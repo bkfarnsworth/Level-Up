@@ -38,8 +38,6 @@ class ViewController: UIViewController {
 //        } catch let error as NSError {
 //            print("Could not save \(error), \(error.userInfo)")
 //        }
-        
-        
     }
     
     
@@ -54,6 +52,22 @@ class ViewController: UIViewController {
             let results =
                 try managedContext.executeFetchRequest(fetchRequest)
             qualities = results as! [NSManagedObject]
+            
+            for(var i = 0; i < qualities.count; i++){
+                print("Printing")
+                let quality = qualities[i];
+                let name = quality.valueForKey("name") as! String;
+                let count = quality.valueForKey("count") as! Int;
+                print("name \(name)");
+                print("count \(count)");
+                
+                if(name == "Happiness"){
+                    happinessCountLabel.text = String(count);
+                }
+                
+            }
+            
+            
             print("qualities \(qualities.count)")
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
@@ -64,8 +78,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    var count = 0;
+
 
     
     @IBOutlet weak var happinessCountLabel: UILabel!
@@ -82,18 +95,41 @@ class ViewController: UIViewController {
             qualities = results as! [NSManagedObject]
             print("qualities \(qualities.count)")
             var hap = qualities[0];
-            var name = hap.valueForKey("name");
-            var count = hap.valueForKey("count");
+            var name = hap.valueForKey("name") as! String;
+            var count = hap.valueForKey("count") as! Int;
             print("qualities \(hap))")
                         print("name \(name))")
                         print("count \(count))")
+            
+            
+
+            
+            hap.setValue(count + 1, forKey: "count");
+            happinessCountLabel.text = String(count + 1)
+            
+//            let entity = NSEntityDescription.entityForName("Quality", inManagedObjectContext:managedContext);
+            //        let quality = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext);
+            //
+            //        quality.setValue("Happiness", forKey: "name");
+            //        quality.setValue(0, forKey: "count");
+            
+                    do{
+                        try managedContext.save();
+//                        qualities.append(quality);
+                    } catch let error as NSError {
+                        print("Could not save \(error), \(error.userInfo)")
+                    }
+
+            
+            
+            
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
         
         
-        count++;
-        happinessCountLabel.text = String(count);
+//        count++;
+//        happinessCountLabel.text = String(count);
     }
 
 }
