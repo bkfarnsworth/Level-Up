@@ -15,6 +15,8 @@ class SharedCode{
     
     func loadQualities(managedContext: NSManagedObjectContext, name: String, setLabel: (Int) -> ()){
         
+        print("5")
+        
         let fetchRequest = NSFetchRequest(entityName: "Quality");
         
         do {
